@@ -10,7 +10,7 @@ abstract public class BaseTest {
     public static void setUp(){
         WebDriverManager.chromedriver();
         Configuration.browser = "chrome";
-        Configuration.browserSize = "1820x1080";
+        Configuration.browserSize = "1920x1080";
         Configuration.timeout = 5000;
     }
 
