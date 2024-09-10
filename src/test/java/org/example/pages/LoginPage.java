@@ -2,6 +2,7 @@ package org.example.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$x;
 
@@ -15,6 +16,7 @@ public class LoginPage {
         Selenide.open(url);
     }
 
+    @Step("Entering user data and confirming authorization")
     public void logIn(String email, String password){
 
         emailForm.sendKeys(email);
